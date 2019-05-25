@@ -1,3 +1,6 @@
+/* SQL COMMANDS TO TEST 
+READLOCKING, WRITELOCKING, AND DEADLOCKING */
+
 alter table customer
 add c_status varchar(30) 
 
@@ -7,11 +10,6 @@ set c_status = 'Active'
 Q9
 
 30 rows deleted.
-
-
-connect
-kar
-superman
 
 insert into topic
 values(topic_seq.nextval, 312, 'Lunch')
@@ -28,24 +26,17 @@ values(topic_seq.nextval, 307, 'Sounds')
 insert into topic
 values(topic_seq.nextval, 302, 'Appliances')
 
-
 Q10
 Create Table NewArticle 
 as Select * from Article;
-
 Commit;
   
 Create Table NewReporter_Article
 as Select * from Reporter_Article
 commit;
 
-update reporter_article
-set r_id = (select from reporter_article where r_
-
-
-
 Q11
 alter table customer
-add c_pw varchar(50) - add this into customer table 
+add c_pw varchar(50) 
 
   
