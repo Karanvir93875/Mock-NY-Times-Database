@@ -7,9 +7,9 @@ add c_status varchar(30)
 update customer
 set c_status = 'Active'
 
-Q9
+/* Q9
 
-30 rows deleted.
+30 rows deleted. */
 
 insert into topic
 values(topic_seq.nextval, 312, 'Lunch')
@@ -26,7 +26,7 @@ values(topic_seq.nextval, 307, 'Sounds')
 insert into topic
 values(topic_seq.nextval, 302, 'Appliances')
 
-Q10
+/* Q10 */
 Create Table NewArticle 
 as Select * from Article;
 Commit;
@@ -35,8 +35,6 @@ Create Table NewReporter_Article
 as Select * from Reporter_Article
 commit;
 
-Q11
+/* Q11 */
 alter table customer
 add c_pw varchar(50) 
-
-  
